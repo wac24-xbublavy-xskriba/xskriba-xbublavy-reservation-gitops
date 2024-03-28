@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xskriba-xbublavy-reservation-ufe-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      pod: xskriba-xbublavy-reservation-ufe-label
+  template:
+    metadata:
+      labels:
+        pod: xskriba-xbublavy-reservation-ufe-label
+    spec:
+      containers:
+        - name: xskriba-xbublavy-reservation-ufe-container
+          image: peterskriba/reservation-ufe
+          imagePullPolicy: Always
+
+          ports:
+            - name: http
+              containerPort: 8080
+
+          resources:
+            requests:
+              memory: "32M"
+              cpu: "0.1"
+            limits:
+              memory: "320M"
+              cpu: "0.3"

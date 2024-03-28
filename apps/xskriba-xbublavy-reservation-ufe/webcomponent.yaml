@@ -1,0 +1,19 @@
+apiVersion: fe.milung.eu/v1
+kind: WebComponent
+metadata:
+  name: xskriba-xbublavy-reservation-ufe
+spec:
+  module-uri: http://xskriba-xbublavy-reservation-ufe.wac-hospital/build/reservation.esm.js
+
+  navigation:
+    # aplication context element
+    - element: xskriba-xbublavy-reservation-app
+      attributes:
+        - name: api-base
+          value: http://localhost:3100/api
+      path: xskriba-xbublavy-reservation
+      title: Rezervačný systém (xskriba, xbublavy)
+      details: Objednávací systém na základe požiadavky pacienta, vysielajúceho, alebo odborného lekára
+  preload: false
+  proxy: true
+  hash-suffix: v1alpha2

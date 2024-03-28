@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: xskriba-xbublavy-reservation-ufe
+spec:
+  selector:
+    pod: xskriba-xbublavy-reservation-ufe-label
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http
