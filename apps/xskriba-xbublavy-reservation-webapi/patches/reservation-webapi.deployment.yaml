@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xskriba-xbublavy-reservation-webapi
+spec:
+  template:
+    spec:
+      containers:
+        - name: openapi-ui
+          env:
+            - name: URL
+              value: /xskriba-xbublavy-openapi
+            - name: BASE_URL
+              value: /xskriba-xbublavy-openapi-ui
