@@ -3,7 +3,10 @@ kind: Component
 images:
   - name: peterskriba/reservation-ufe
     newName: peterskriba/reservation-ufe
-    newTag: 1.0.0 #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+    newTag: 1.1.2 #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  - name: annotaid/reservation-webapi
+    newName: annotaid/reservation-webapi
+    newTag: 1.0.2
 
 replacements:
   - targets:
@@ -20,5 +23,5 @@ replacements:
       name: xskriba-xbublavy-reservation-ufe-deployment
       fieldPath: spec.template.spec.containers.0.image
       options:
-        delimiter: ":"
+        delimiter: ':'
         index: 1

@@ -9,6 +9,7 @@ commonLabels:
 
 resources:
   - ../../../apps/xskriba-xbublavy-reservation-ufe
+  - ../../../apps/xskriba-xbublavy-reservation-webapi
 
 components:
   - ../../../components/version-release
