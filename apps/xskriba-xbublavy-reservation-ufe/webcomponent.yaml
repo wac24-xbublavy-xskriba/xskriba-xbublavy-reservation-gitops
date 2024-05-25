@@ -10,7 +10,7 @@ spec:
     - element: xskriba-xbublavy-reservation-app
       attributes:
         - name: api-base
-          value: xskriba-xbublavy-api
+          value: /xskriba-xbublavy-api
       path: xskriba-xbublavy-reservation
       title: Rezervačný systém (xskriba, xbublavy)
       details: Objednávací systém na základe požiadavky pacienta, vysielajúceho, alebo odborného lekára
