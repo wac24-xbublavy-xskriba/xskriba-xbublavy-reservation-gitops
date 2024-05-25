@@ -9,4 +9,4 @@ images:
     newTag: 1.7.3 # {"$imagepolicy": "wac-hospital:ufe-controller:tag"}
   - name: annotaid/reservation-webapi
     newName: annotaid/reservation-webapi # {"$imagepolicy":  "wac-hospital:reservation-webapi:name"}
-    newTag: main.20240525.1507 # {"$imagepolicy": "wac-hospital:reservation-webapi:tag"}
+    newTag: main.20240525.1801 # {"$imagepolicy": "wac-hospital:reservation-webapi:tag"}
