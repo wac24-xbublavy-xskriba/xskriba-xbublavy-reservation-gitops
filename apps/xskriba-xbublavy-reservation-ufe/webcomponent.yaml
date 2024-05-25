@@ -10,7 +10,7 @@ spec:
     - element: xskriba-xbublavy-reservation-app
       attributes:
         - name: api-base
-          value: http://localhost:3100/api
+          value: http://localhost:30081/api
       path: xskriba-xbublavy-reservation
       title: Rezervačný systém (xskriba, xbublavy)
       details: Objednávací systém na základe požiadavky pacienta, vysielajúceho, alebo odborného lekára

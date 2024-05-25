@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
   - ../../../apps/xskriba-xbublavy-reservation-ufe
+  - ../../../apps/xskriba-xbublavy-reservation-webapi
 
 components:
   - ../../../components/version-developers
+  - https://github.com/wac24-xbublavy-xskriba/xskriba-xbublavy-reservation-webapi//deployments/kustomize/components/mongodb
+
+patches:
+  - path: patches/reservation-webapi.service.yaml

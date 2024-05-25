@@ -13,6 +13,8 @@ resources:
   - git-repository.yaml
   - reservation-ufe.image-repository.yaml
   - reservation-ufe.image-policy.yaml
+  - reservation-webapi.image-repository.yaml
+  - reservation-webapi.image-policy.yaml
   - ufe-controller.image-repository.yaml
   - ufe-controller.image-policy.yaml
   - image-update-automation.yaml
