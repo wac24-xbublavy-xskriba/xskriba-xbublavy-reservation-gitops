@@ -11,18 +11,5 @@ resources:
   - ../../../apps/xskriba-xbublavy-reservation-ufe
   - ../../../apps/xskriba-xbublavy-reservation-webapi
 
-patches:
-  - patch: |-
-      - op: add
-        path: "/spec/template/spec/containers/0/env/-"
-        value:
-          name: "HTTP_CSP_HEADER"
-          value: "default-src * data: mediastream: blob: filesystem: about: ws: wss: 'unsafe-eval' 'wasm-unsafe-eval' 'unsafe-inline'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline';font-src * data: blob: 'unsafe-inline';frame-ancestors * data: blob: 'unsafe-inline';"
-    target:
-      group: apps
-      version: v1
-      kind: Deployment
-      name: ufe-controller
-
 components:
   - ../../../components/version-release
