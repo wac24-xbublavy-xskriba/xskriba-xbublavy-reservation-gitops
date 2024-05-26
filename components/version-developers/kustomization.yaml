@@ -3,7 +3,7 @@ kind: Component
 images:
   - name: peterskriba/reservation-ufe
     newName: peterskriba/reservation-ufe # {"$imagepolicy":  "wac-hospital:reservation-ufe:name"}
-    newTag: main.20240526.2017 # {"$imagepolicy": "wac-hospital:reservation-ufe:tag"}
+    newTag: main.20240526.2036 # {"$imagepolicy": "wac-hospital:reservation-ufe:tag"}
   - name: milung/ufe-controller
     newName: milung/ufe-controller # {"$imagepolicy":  "wac-hospital:ufe-controller:name"}
     newTag: 1.7.3 # {"$imagepolicy": "wac-hospital:ufe-controller:tag"}
